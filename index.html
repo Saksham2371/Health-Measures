@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Health Measures</title>
+</head>
+
+<body>
+    <header>
+
+        <nav>
+
+            <ul>
+                <li><img id="logo" src="logo.jpeg" alt=""></li>
+                <li><a href="#">Health Measures</a></li>
+                <li><a href="#calc">Bmi Calculator</a></li>
+                <li><a href="#section-3">About Us</a></li>
+                <li><a href="#section-7">Contact us</a></li>
+                <button id="signup">SIGN UP</button>
+            </ul>
+
+        </nav>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="yoga.jpg" style="width:100%">
+              <div class="text">Balance your mind</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="fit.jpg" style="width:100%">
+              <div class="text">Don’t give up</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="box.jpg" style="width:100%">
+              <div class="text">Fight harder</div>
+            </div>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+
+    </header>
+    <section>
+        <h2 class="section-head">Before Checking BMI</h2>
+        <div id="firstrow">
+
+            <div class="inline-block" id="art1">
+
+                <p>Your BMI is a measurement that is a ratio of your weight and height. It’s a good way to gauge whether
+                    your weight is in healthy proportion to your height. In fact, knowing your BMI can help you – and
+                    your GP – determine any health risks you may face if it’s outside of the healthy range.
+                </p>
+                <p>
+                    While it may be a great guide to establishing the amount of body fat you carry, your BMI won’t take
+                    into consideration your age, sex, ethnicity, or even muscle mass. It’s also not appropriate in
+                    determining a healthy weight in the elderly, children, pregnant women or even athletes.
+                </p>
+                <p>
+                    We'll be the first to admit that it's pretty awesome to slip on a skimpy swimsuit and know you look
+                    amazing in it. But maintaining a healthy weight (whether that means dropping a few pounds or gaining
+                    some) is about so much more than inciting envy when you're at the pool. Here's proof
+                </p>
+
+            </div>
+            <div id="calc">
+                <form>
+                    <h4 id="bmi-heading">BMI Calculator</h4>
+                    <table>
+                        <tr>
+                            <td><label>Weight</label></td>
+                            <td> <input type="text" id="weight" class="input-field" placeholder="**in Kg"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Age</label></td>
+                            <td><input type="number" class="input-field" placeholder="1-200"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Height</label></td>
+                            <td><input type="text" id="height" class="input-field" placeholder="**in meters"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Gender</label></td>
+                            <td><select name="gender" id="gender" class="input-field">
+                                    <option value="male">Male</option>
+                                    <option value="female">Female </option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Your Bmi Is</td>
+                            <td id="out"></td>
+                        </tr>
+
+                    </table>
+                    <button id="bmichk" class="btnstyle" type="button">Check BMI</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section>
+        <img src="bmi index.jpg" alt="" id="img-bmi">
+    </section>
+    <section>
+        <h1 class="section-head">Weight Catogeries</h1>
+        <div class="card-wrapper">
+            <div class="card" id="und">
+                <div class="img"><img src="under normal.jpg"></div>
+                <h3>Under Weight</h3>
+                <div class="des">If your Bmi is below 18.5 then you are in under weight category</div>
+                <button class="btnstyle">Know More</button>
+            </div>
+            <div class="card" id="nrm">
+                <div class="img"><img src="normal.jpg"></div>
+                <h3>Normal</h3>
+                <div class="des">If your Bmi is in between 18.5 and 24.9 then you are normal</div>
+                <button class="btnstyle">Know More</button>
+            </div>
+            <div class="card" id="ovr">
+                <div class="img"><img src="over.jpg"></div>
+                <h3>Over Weight</h3>
+                <div class="des">If your Bmi is in between 25 and 29.9 then you are over weight</div>
+                <button class="btnstyle">Know More</button>
+            </div>
+            <div class="card" id="obs">
+                <div class="img"><img src="obese.jpg"></div>
+                <h3>Obese</h3>
+                <div class="des">If your Bmi is in between 30 and 34.9 then you are obese</div>
+                <button class="btnstyle">Know More</button>
+            </div>
+            <div class="card" id="ovrobs">
+                <div class="img"><img src="over obese.jpg"></div>
+                <h3>Extremly Obese</h3>
+                <div class="des">If your Bmi is greater than 35 then you are over obese</div>
+                <button class="btnstyle">Know More</button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2 class="section-head">Under Weight</h2>
+        <p>If you’re underweight, you may not be eating enough healthy
+            foods with key nutrients to fuel your body. That can cause
+            malnutrition. Over time, malnutrition can affect your healt
+            h in a number of different ways that may be noticeable to you
+            or those around you.</p>
+        <h3>Consequnces of being Under weight</h3>
+        <ul>
+            <li>
+                <h4>Decreased Immunity</h4>
+                <p>A recent reviewTrusted Source of studies found a connection between increased infections and being
+                    underweight. The researchers noted their difficulty in determining if this is a result of being
+                    underweight or if it has more to do the underlying causes for being underweight. For example,
+                    malnourishment may lead to decreased immune function and also cause people to be underweight. More
+                    research is needed to fully understand the connection between weight and immune function.</p>
+            </li>
+            <li>
+                <h4>Increased risk of surgical complications</h4>
+                <p>One study found evidence that underweight people who had total knee replacement surgery were more
+                    likely to develop infections following the surgery than people who were not underweight. While they
+                    could not determine the reasons for this, they believe underweight people aren’t able to heal wounds
+                    as well as people with a normal BMI. They also found that the underweight group had low preoperative
+                    hemoglobin. While more research is needed, the findings suggest that being underweight can affect
+                    your ability to heal wounds.</p>
+                <p>Another study found increased complications in underweight people who had total hip replacement
+                    surgery compared with people of normal weight. Complications following coronary bypass surgery and
+                    lung transplants also seem to be higher for people who are underweight. Researchers have also linked
+                    low BMI to increased incidences of postoperative deaths within the first year following a lower
+                    extremity bypass surgery.</p>
+
+            </li>
+            <li>
+                <h4>Osteoporosis</h4>
+                <p>Low body weight may increase your risk for low bone mineral density (BMD) and osteoporosis. One
+                    studyTrusted Source looked at BMD in 1,767 premenopausal women, and found that 24 percent of women
+                    with a BMI of 18.5 or lower had a low BMD. Only 9.4 percent of participants with a BMI higher than
+                    18.5 had low BMD. The study results suggest that being underweight increases risk for osteoporosis..
+                </p>
+            </li>
+
+        </ul>
+    </section>
+    <section>
+        <h2 class="section-head">Normal</h2>
+        <p>Reaching and maintaining a healthy weight is important for overall health and can help you prevent and
+            control many diseases and conditions. If you are overweight or obese, you are at higher risk of developing
+            serious health problems, including heart disease, high blood pressure, type 2 diabetes, gallstones,
+            breathing problems, and certain cancers. That is why maintaining a healthy weight is so important: It helps
+            you lower your risk for developing these problems, helps you feel good about yourself, and gives you more
+            energy to enjoy life</p>
+        <p>By maintaining a healthy weight and normal BMI you’re likely to have fewer joint and muscle pains, more
+            energy, better regulation of bodily fluids and blood pressure, reduced burden to your heart and circulatory
+            system, better sleep, reductions in blood triglycerides, blood sugar, and the risk of developing diabetes,
+            and reduced risk for heart disease and certain cancers.
+        </p>
+        <p>According to a 2012 study from Johns Hopkins University School of Medicine, losing weight—especially pesky
+            abdominal fat—can help you log higher-quality Zzs. "Fat, and particularly belly fat, interferes with lung
+            function," says Kerry J. Stewart, Ed.D., a professor of medicine at Johns Hopkins University and one of the
+            study authors. "It becomes harder for the lungs to expand because fat is in the way." And since breathing
+            issues can lead to nighttime problems like sleep apnea, it takes a toll on your shuteye
+        </p>
+        <p>
+            It’s no secret that normal weight people have a lower risk of disease and thus, live longer. But do you know
+            just how much longer? The Organisation for Economic Co‑operation and Development, which has studied the
+            global economic impacts of obesity, says that for every 33 pounds of excess weight, the risk of death
+            increases by about 30 percent. They estimate that the lifespan of an obese person (that's anyone with a BMI
+            of 40-45) is up to 10 years shorter than that of a normal-weight person.
+        </p>
+    </section>
+    <section>
+        <h2 class="section-head">Over Weight</h2>
+        <p>Being overweight or obese puts you at a greater risk of developing diabetes mellitus, heart disease,
+            osteoarthritis of the hips, knees and ankles (due to increased wear and tear on those joints) and a host of
+            other medical problems. Don’t forget your HealthTeam Advantage plan includes complimentary membership to
+            SilverSneakers
+        </p>
+        <p>You’re at a higher risk of health issues if your BMI is 35-39.9 and you have two or more weight-related
+            medical problems—in fact, you’re considered morbidly obese (deathly fat). Your risk of medical
+            complications, (heart attack or stroke that could result in death), is significantly elevated. The same
+            morbidly obese category applies if your BMI is more than 39.9 even if you’re otherwise healthy.
+        </p>
+        <p>
+            Excess weight increases the work your heart must do. It also raises blood pressure and blood cholesterol and
+            triglyceride levels and lowers HDL (good) cholesterol levels. It can make diabetes more likely to develop,
+            too. Lifestyle changes that help you maintain a 3-5% weight loss are likely to result in clinically
+            meaningful improvements in blood glucose, triglycerides, and risk of developing type 2 diabetes. Greater
+            weight loss can even help reduce BP and improve blood cholesterol.
+        </p>
+        <p>Being overweight or obese are both terms for having more body fat than what is considered healthy. Both are
+            used to identify people who are at risk for health problems from having too much body fat. However, the term
+            "obese" generally means a much higher amount of body fat than "overweight."
+        </p>
+
+        <p> Everyone needs some body fat for energy, heat insulation, and other body functions. But having too much can
+            lead to serious health problems. The more body fat you have, the greater your risk for diabetes, kidney
+            disease, heart disease, and other problems.
+        </p>
+    </section>
+    <section>
+        <div id="section-3">
+            <h3>About Me</h3>
+            <p id="section3-desc">According to experts, any habit can be formed in 21 days. The same statement applies to healthy eating.</p>
+    
+            <div id="testimonials">
+                <div class="section3-item">
+                    <img src="dddd.jpg" />
+                    <p class="desc ">Well I am Saksham Sahani, the founder of this project. I decided this layout and thought of better ways to express our idea in most effective manner... So far i have got this and surely have some plans ahead. </p>
+                    <h2>Saksham Sahani</h2>
+                    <p>Co-Ideator</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section-7">
+        <div id="section7-address">
+            <div class="right">
+                <p class="title">Contact Us</p>
+                <h3 class="heading">Wanna Know us?</h3>
+                <p class="description">Overeating is one of the most common causes of overweight and digestive problems.
+                </p>
+
+                <h4 class="left-heading">About us</h4>
+                <p class="left-lines">
+                   I am an upcoming engineer<br>fetching my way in Web Development.<br>I have tried my best in
+                    making this website in very less time, <br>even though i had a month to make it ;) <br>Hope you
+                    like my efforts and will also give much needed feedback</p>
+            </div>
+            <div class="left">
+                <h3 class="heading">Get In Touch</h3>
+                <p class="description">The task of proper nutrition - to remove from the diet harmful food and enrich it
+                    useful.</p>
+
+                <form id="form">
+                    <div class="input-grp">
+                        <input class="input-box" id="name" type="text" name="name" placeholder="Name**" />
+                        <i class="fas fa-check-circle h"></i>
+                            <i class="fas fa-exclamation-circle h"></i>
+                            <small>Error message</small></div>
+                    <div class="input-grp">
+                        <input class="input-box" id="phone" type="text" name="phone" placeholder="Phone Number**" />
+                        <i class="fas fa-check-circle h"></i>
+                        <i class="fas fa-exclamation-circle h"></i>
+                        <small>Error message</small></div>
+                    <div class="input-grp">
+                        <input class="input-box"  type="text" name="subject" placeholder="Subject" />
+                        <i class="fas fa-check-circle h"></i>
+                            <i class="fas fa-exclamation-circle h"></i>
+                            <small>Error message</small></div>
+                    <div class="input-grp">
+                        <input class="input-box" type="email" id="email" name="email" placeholder="E-mail**" />
+                        <i class="fas fa-check-circle h"></i>
+                            <i class="fas fa-exclamation-circle h"></i>
+                            <small>Error message</small></div>
+                    <div class="input-grp">
+                        <textarea class="input-box" >Message</textarea>
+                        <i class="fas fa-check-circle h"></i>
+                        <i class="fas fa-exclamation-circle h"></i>
+                        <small>Error message</small></div>
+                    <input id="btn-1" type="submit" value="Submit Now">
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- The Modal login -->
+    <div id="myModal" class="modal">
+        <div class="form-box">
+            <span class="close">&times;</span>
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+
+            </div>
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form id="login" class="input-group">
+                        <input type="text" class="input-field" placeholder="User Id" required>
+                        <input type="text" class="input-field" placeholder="Enter Password" required>
+                        <input type="checkbox" class="check-box"><span>Remember Password</span>
+                        <button type="submit" class="submit-btn">Log in</button>
+                    </form>
+                    <form id="register" class="input-group">
+                        <input type="text" class="input-field" placeholder="User Id" required>
+                        <input type="email" class="input-field" placeholder="Email Id" required>
+                        <input type="text" class="input-field" placeholder="Enter Password" required>
+                        <input type="number" class="input-field" placeholder="Phone Number" required>
+                        <input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
+                        <button type="submit" class="submit-btn">Register</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    // for image slider
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+// .......................................................................................   
+    // const bmicheck = document.getElementById('bmichk');
+    document.getElementById('bmichk').addEventListener('click', givebmi);
+    function givebmi() {
+        var weight = document.getElementById('weight').value;
+        var height = document.getElementById('height').value;
+
+        var newbmi = Math.round(weight / Math.pow(height, 2));
+        document.getElementById('out').innerHTML = newbmi;
+        var bmi=parseInt(newbmi);
+    }
+    //login page
+    var x = document.getElementById("login");
+    var y = document.getElementById("register");
+    var z = document.getElementById("btn");
+
+    function register() {
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+    }
+    function login() {
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0px";
+    }
+
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("signup");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    //validation on section 7
+        const form = document.getElementById('form');
+        const name = document.getElementById('name');
+        const phone = document.getElementById('phone');
+        const email = document.getElementById('email');
+        var err=0;
+    
+
+    form.addEventListener('submit', e => {       
+        
+        checkInputs();
+        if(err!=0){
+            e.preventDefault();
+        }
+
+        
+    });
+
+    function checkInputs() {
+        // trim to remove the whitespaces
+        const nameValue = name.value.trim();
+        const phoneValue = phone.value.trim();
+        const emailValue = email.value.trim();
+        err=0;
+        
+        if(nameValue === '') {
+            setErrorFor(name, 'name cannot be blank');
+            
+        } else {
+            setSuccessFor(name);
+        }
+        if(phoneValue === '') {
+            setErrorFor(phone, 'phone number cannot be blank');
+        }else if (!isPhone(phoneValue)) {
+            setErrorFor(phone, 'not a valid phone number');}
+        else {
+            setSuccessFor(phone);
+        }
+        
+        if(emailValue === '') {
+            setErrorFor(email, 'Email cannot be blank');
+        } else if (!isEmail(emailValue)) {
+            setErrorFor(email, 'Not a valid email');
+        } else {
+            setSuccessFor(email);
+        }
+    }
+
+    function setErrorFor(input, message) {
+        const formControl = input.parentElement;
+        const small = formControl.querySelector('small');
+        formControl.className = 'input-grp error';
+        small.innerText = message;
+        err=err+1;
+    }
+
+    function setSuccessFor(input) {
+        const formControl = input.parentElement;
+        formControl.className = 'input-grp success';
+    }
+        
+    function isEmail(email) {
+        return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+    }
+    function isPhone(phone){
+        return /^[789][0-9]{9}$/.test(phone);
+    }
+
+
+</script>
+
+</html>
